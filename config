@@ -210,4 +210,3 @@ exec --no-startup-id blueman-tray
 exec --no-startup-id blueman-applet
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dunst
-exec --no-startup-id polybar
