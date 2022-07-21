@@ -55,11 +55,11 @@ bindsym $mod+Shift+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec --no-startup-id dmenu_run -i -fn 'monospace-20' -l 20 -p run
-#bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu "dmenu -i -fn 'monospace-20' -l 20 -p run"
-#bindsym $mod+Tab exec --no-startup-id wmctrl -l | cut -d " " -f 5- | dmenu -l 20 -fn "monospace-20" -i -p windows | xargs -I {} wmctrl -a "{}"
-bindsym $mod+d exec --no-startup-id "rofi -show combi -combi-modi drun,run -font 'monospace 20'"
-bindsym $mod+Tab exec --no-startup-id "rofi -show window -font 'monospace 20'"
+bindsym $mod+d exec --no-startup-id dmenu_run -i -fn 'monospace-20' -l 20
+bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu "dmenu -i -fn 'monospace-20' -l 20"
+bindsym $mod+Tab exec --no-startup-id wmctrl -l | cut -d " " -f 5- | dmenu -l 20 -fn "monospace-20" -i | xargs -I {} wmctrl -a "{}"
+#bindsym $mod+d exec --no-startup-id "rofi -show combi -combi-modi drun,run -font 'monospace 20'"
+#bindsym $mod+Tab exec --no-startup-id "rofi -show window -font 'monospace 20'"
 
 
 # change focus
