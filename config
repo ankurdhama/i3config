@@ -198,8 +198,8 @@ bar {
 #workspace_layout default
 gaps inner 10
 smart_gaps on
-bindsym Mod1+equal gaps inner current plus 5
-bindsym Mod1+minus gaps inner current minus 5
+bindsym $mod+equal gaps inner current plus 5
+bindsym $mod+minus gaps inner current minus 5
 
 for_window [class=".*"] border pixel 5
 
@@ -215,8 +215,6 @@ bindsym $mod+Tab exec --no-startup-id "rofi -show window -font 'monospace 14'"
 bindsym $mod+l exec --no-startup-id i3lock -c 000000; exec --no-startup-id xset dpms force off
 bindsym $mod+m floating enable, resize set 100 ppt 100 ppt, move position 0 0, resize shrink down 25;
 bindsym $mod+n floating enable, resize set 50 ppt 50 ppt, move position center
-bindsym $mod+equal resize grow left 25, resize grow right 25, resize grow up 25, resize grow down 25
-bindsym $mod+minus resize shrink left 25, resize shrink right 25, resize shrink up 25, resize shrink down 25
 exec --no-startup-id exec nitrogen --restore
 exec --no-startup-id pasystray
 exec --no-startup-id blueman-tray
